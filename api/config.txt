@@ -1,0 +1,25 @@
+Configuracion de la api desarrollada en laravel
+instalar composer y agregarlo al path(variables de entorno path)
+
+instalar las dependencias con
+- npm install
+- npm las
+-composer global require laravel/installer
+crear la base de datos
+
+1- Configurar la conexion de la base de datos en el archivo .env agreggar las credenciales de la base de datos
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=ecomerce
+DB_USERNAME=root
+DB_PASSWORD=
+
+2- Ejecutar el mamando `php artisan migrate  `     para ejecutar las migraciones
+apareceran las tablas en la base de datos creada en mysql
+
+3 ejecutar la api con el comando `php artisan serve`
+
+(tener corriendo el servidor apache y mysql de xammp)
+
+4 testear los endpoints
